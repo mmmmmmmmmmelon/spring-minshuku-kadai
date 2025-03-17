@@ -5915,3 +5915,33 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.emf.ecore 2 0 2025-03-17 00:01:39.177
 !MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+!SESSION 2025-03-17 21:09:39.462 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-03-17 21:09:42.131
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-03-17 21:09:47.081
+!MESSAGE ワークスペースは以前のセッションで変更が保存されずに終了しました； 変更を回復するためにワークスペースをリフレッシュ中です。
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-17 21:16:29.493
+!MESSAGE Connecting Git team provider failed. 詳細はログを参照してください。
+!STACK 1
+org.eclipse.core.runtime.CoreException: Connecting Git team provider failed. 詳細はログを参照してください。
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:118)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$8.run(GitImportWizard.java:289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2473)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:296)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Error connecting project spring-minshuku-kadai, suggested path 'C:\samurai\spring-minshuku-kadai\.git' does not match found Git repositories '[RepositoryMapping[<empty> -> '../../../.git', absolute path: 'C:/samurai2/spring-minshuku-kadai/.git' ]]'.
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-03-17 21:16:29.494
+!MESSAGE Connecting Git team provider failed. 詳細はログを参照してください。
+!SUBENTRY 2 org.eclipse.egit.core 4 0 2025-03-17 21:16:29.494
+!MESSAGE Error connecting project spring-minshuku-kadai, suggested path 'C:\samurai\spring-minshuku-kadai\.git' does not match found Git repositories '[RepositoryMapping[<empty> -> '../../../.git', absolute path: 'C:/samurai2/spring-minshuku-kadai/.git' ]]'.
