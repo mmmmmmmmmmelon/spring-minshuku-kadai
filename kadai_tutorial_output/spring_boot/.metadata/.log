@@ -5945,3 +5945,37 @@ Contains: Error connecting project spring-minshuku-kadai, suggested path 'C:\sam
 !MESSAGE Connecting Git team provider failed. 詳細はログを参照してください。
 !SUBENTRY 2 org.eclipse.egit.core 4 0 2025-03-17 21:16:29.494
 !MESSAGE Error connecting project spring-minshuku-kadai, suggested path 'C:\samurai\spring-minshuku-kadai\.git' does not match found Git repositories '[RepositoryMapping[<empty> -> '../../../.git', absolute path: 'C:/samurai2/spring-minshuku-kadai/.git' ]]'.
+
+!ENTRY org.eclipse.egit.core 4 0 2025-03-17 21:20:29.227
+!MESSAGE プッシュ中に例外が発生しました URI https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1557)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-17 21:20:29.229
+!MESSAGE どのリポジトリーにも接続できません: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git (https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-03-17 21:21:23.785
+!MESSAGE プッシュ中に例外が発生しました URI https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1557)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-17 21:21:23.786
+!MESSAGE どのリポジトリーにも接続できません: https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git (https://github.com/mmmmmmmmmmelon/spring-minshuku-kadai.git: 未認証)
